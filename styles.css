@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -167,4 +168,48 @@ footer {
     position: absolute;
     border-bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: none;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }

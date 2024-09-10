@@ -4,13 +4,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #394784;
 }
 
 header {
-    font-size: medium;
+    font-size: 20px;
     background: #e3e5ed;
     color: #394784;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +25,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    gap: 15px;
 }
 
 nav ul li {
@@ -46,7 +48,7 @@ nav ul li a:hover {
 
 section {
     background: #394784;
-    padding: 20px;
+    padding: 40px;
 }
 
 #about {
@@ -63,7 +65,7 @@ section {
 }
 
 .text-content {
-    max-width: 1000px; 
+    max-width: 600px; 
     text-align: left;
 }
 
@@ -114,7 +116,7 @@ section {
     width: calc(33.333% - 20px); 
     margin: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    min-width: 50px; 
+    min-width: 150px; 
     max-width: 250px;
 }
 
@@ -164,7 +166,7 @@ footer {
     background: #e3e5ed;
     color: #394784;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
     position: absolute;
     border-bottom: 0;
     width: 100%;
@@ -187,21 +189,43 @@ footer {
     }
 }
 
-/* Estilos para pantallas pequeñas (móviles) */
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
         text-align: center;
+        font-size: 18px;
+        padding: 15px;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
     }
 
     .about-content {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+    }
+    
+    .about-image {
+        max-width: 150px;
+    }
+
+    .projects-container {
+        flex-direction: column;
     }
 
     .project-card {
@@ -211,5 +235,15 @@ footer {
 
     footer {
         font-size: 14px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }

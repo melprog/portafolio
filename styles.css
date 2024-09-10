@@ -190,7 +190,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 932px) {
     header {
         flex-direction: column;
         text-align: center;
@@ -246,4 +246,5 @@ footer {
         align-items: center;
         gap: 10px;
     }
+
 }
